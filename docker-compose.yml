@@ -4,6 +4,8 @@ services:
   postgres:
     image: postgres
     restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
   graphql-engine:
     image: hasura/graphql-engine:v1.0.0
     ports:
